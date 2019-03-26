@@ -27,7 +27,7 @@ int main()
 	svd(Hs, u, s, v);	// only water filling in case of one user
 	
 	power_loading = diag(sqrt(waterfilling(s, snr)));		// calculating the power loading matrix using waterfilling
-	bd_capacity(i) = log2(real(det(I + snr * Hs * power_loading * hermitian_transpose(Hs * power_loading))));
+	bd_capacity(i) = 0.5*log2(real(det(I + snr * Hs * power_loading * hermitian_transpose(Hs * power_loading))));
 	}
 	cout << "Saving results to bd1user_capacity.it" << endl;
 	file.open("bd1user_capacity.it");

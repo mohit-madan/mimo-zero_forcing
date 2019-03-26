@@ -37,7 +37,7 @@ int main()
 	}
 	power_loading = diag(sqrt(waterfilling(sigma, snr)));		// calculating the power loading matrix using waterfilling
 	modul_mat = modul_mat * power_loading;
-	bd_capacity(i) = log2(real(det(I + snr * Hs * modul_mat * hermitian_transpose(Hs * modul_mat))));
+	bd_capacity(i) = 0.5*log2(real(det(I + snr * Hs * modul_mat * hermitian_transpose(Hs * modul_mat))));
 	}
 	cout << "Saving results to bd2_capacity.it" << endl;
 	file.open("bd2_capacity.it");
