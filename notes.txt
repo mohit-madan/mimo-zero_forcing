@@ -1,0 +1,19 @@
+1. sudo apt install libitpp-dev
+
+2. Compile and run the examples:
+
+http://itpp.sourceforge.net/4.3.1/tutorial.html
+
+g++ mycode.cpp -litpp
+
+3. Read:
+
+http://www.ifp.illinois.edu/~pramodv/Chapters_PDF/Fundamentals_Wireless_Communication_chapter2.pdf
+http://www.ifp.illinois.edu/~pramodv/Chapters_PDF/Fundamentals_Wireless_Communication_chapter3.pdf
+
+Paper to look at:
+https://ieeexplore.ieee.org/abstract/document/1261332/
+
+Example Paper
+http://www.ee.ust.hk/~eeknlau%20/HKUST-Office-HomePage/Publications_files/Overview-Limited-Feedback-JSAC2008.pdf
+
